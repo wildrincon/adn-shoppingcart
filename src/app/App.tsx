@@ -1,15 +1,14 @@
 import * as React from 'react';
 import { AppRouter } from 'app/AppRouter';
 import { GlobalErrorBoundary } from './core/errors/GlobalErrorBoundary';
-import { Provider } from 'react-redux';
-import store from 'app/core/redux/store';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 function App() {
   return (
     <GlobalErrorBoundary>
-      <Provider store={store}>
+      <QueryClientProvider client={client}>
         <AppRouter />
-      </Provider>
+      </QueryClientProvider>
     </GlobalErrorBoundary>
   );
 }
