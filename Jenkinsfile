@@ -16,7 +16,7 @@ pipeline {
             stage('Checkout') {
                 steps {
                 echo '------------>Checkout desde Git Microservicio<------------'
-                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], gitTool: 'Default' , submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GitHub_wilder.rincon', url: 'https://github.com/wildrincon/adn-shoppingcart']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], gitTool: 'Default' , submoduleCfg: [], userRemoteConfigs: [[credentialsId: '200', url: 'https://github.com/wildrincon/adn-shoppingcart']]])
                 }
             }
 
