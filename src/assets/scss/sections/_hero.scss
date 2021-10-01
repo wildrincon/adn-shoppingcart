@@ -1,0 +1,41 @@
+.hero {
+  width: 100%;
+  position: relative;
+  padding: 5rem 0;
+  background: {
+    image: url('../../img/hero_img.jpg');
+    size: cover;
+    position: cover;
+  }
+
+  &__item {
+    color: $green;
+    line-height: 1.5;
+
+    &--content {
+      width: 30%;
+      top: 15%;
+      z-index: 10;
+    }
+
+    &--title {
+      font-weight: lighter;
+      font-size: 250%;
+      color: $light;
+      margin-bottom: 1rem;
+    }
+
+    &--text {
+      margin-bottom: 2rem;
+    }
+
+    &--btn {
+      @include primary-btn;
+      border-radius: 2rem;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      display: inline-block;
+      font-weight: 600;
+    }
+  }
+}

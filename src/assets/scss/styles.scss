@@ -1,0 +1,38 @@
+/**
+Agregue las clases globales como margenes, relleno, grid.
+
+NOTA PARA MICROFRONTENDS: las clases globales pueden afectar al estilado general de la aplicación.
+Las clases y estilos compartidos deberían ser obtenidos de un CDN por el ORQUESTADOR.
+
+Ej:
+
+.margin-32--bottom {
+  margin-bottom: 32px;
+}
+
+*/
+
+@import 'partials/utils';
+@import 'partials/variables';
+@import 'partials/reset';
+@import 'partials/mixins';
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Quicksand', 'Open Sans', sans-serif;
+}
+
+.row {
+  margin: auto;
+  max-width: $page-width;
+  overflow: auto;
+}
+
+@import 'sections/hero';
+
+.main-footer {
+  padding: 2rem 0;
+  background: $light;
+}
+
+@import 'partials/responsive';

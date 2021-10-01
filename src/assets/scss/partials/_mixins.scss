@@ -1,0 +1,14 @@
+@mixin primary-btn {
+  background: $blue;
+  transition: 0.4s ease-out background;
+
+  &:hover,
+  &:focus {
+    background: darken($color: $green, $amount: 20);
+  }
+
+  &:disabled {
+    background: #585858;
+    cursor: not-allowed;
+  }
+}

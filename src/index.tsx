@@ -1,4 +1,4 @@
-import './styles.scss';
+import './assets/scss/styles.scss';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';

@@ -4,6 +4,9 @@ import { GlobalErrorBoundary } from './core/errors/GlobalErrorBoundary';
 import { Provider } from 'react-redux';
 import store from 'app/core/redux/store';
 
+// Styles
+import '../assets/scss/styles.scss';
+
 function App() {
   return (
     <GlobalErrorBoundary>
