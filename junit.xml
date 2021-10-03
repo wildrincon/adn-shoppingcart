@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="9" failures="0" errors="0" time="14.886">
+  <testsuite name="PaginadorProductos Test" errors="0" failures="0" skipped="0" timestamp="2021-10-03T15:25:33" time="5.183" tests="3">
+    <testcase classname="PaginadorProductos Test should match snapshot" name="PaginadorProductos Test should match snapshot" time="0.02">
+    </testcase>
+    <testcase classname="PaginadorProductos Test Renderizar con menos de 10 productos no debe pintar botones" name="PaginadorProductos Test Renderizar con menos de 10 productos no debe pintar botones" time="0.001">
+    </testcase>
+    <testcase classname="PaginadorProductos Test Renderizar con  20 productos debe pintar 2 botones" name="PaginadorProductos Test Renderizar con  20 productos debe pintar 2 botones" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="Reductor productos" errors="0" failures="0" skipped="0" timestamp="2021-10-03T15:25:33" time="5.484" tests="1">
+    <testcase classname="Reductor productos debería agregar productos" name="Reductor productos debería agregar productos" time="0.004">
+    </testcase>
+  </testsuite>
+  <testsuite name="FormCrearProducto test" errors="0" failures="0" skipped="0" timestamp="2021-10-03T15:25:33" time="7.031" tests="5">
+    <testcase classname="FormCrearProducto test should match snapshot" name="FormCrearProducto test should match snapshot" time="0.042">
+    </testcase>
+    <testcase classname="FormCrearProducto test should fail on submit all fields missing" name="FormCrearProducto test should fail on submit all fields missing" time="0.031">
+    </testcase>
+    <testcase classname="FormCrearProducto test should fail on submit two fields missing" name="FormCrearProducto test should fail on submit two fields missing" time="0.048">
+    </testcase>
+    <testcase classname="FormCrearProducto test should fail on submit two fields missing" name="FormCrearProducto test should fail on submit two fields missing" time="0.051">
+    </testcase>
+    <testcase classname="FormCrearProducto test should submit" name="FormCrearProducto test should submit" time="0.077">
+    </testcase>
+  </testsuite>
+</testsuites>
