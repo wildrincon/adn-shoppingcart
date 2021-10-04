@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { Div, SpanFallback } from './styles';
+import { Div } from './styles';
+import Spinner from '../Spinner';
 
 export const LazyFallback = () => (
   <Div>
-    <SpanFallback>Cargando página...</SpanFallback>
+    <Spinner />
   </Div>
 );

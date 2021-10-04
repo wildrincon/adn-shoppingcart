@@ -6,12 +6,17 @@ import { NavList } from './NavList';
 export const NavigationHeader: React.FC = () => {
   const routes = [
     { label: 'Home', url: '/' },
+    { label: 'Tienda', url: '/tienda' },
     { label: 'Productos', url: '/productos' },
   ];
   return (
-    <HeaderNav>
-      <NavBrand text="Shopping Cart"></NavBrand>
-      <NavList items={routes} />
+    <HeaderNav
+      className="navbar navbar-expand-lg navbar-light bg-light justify-content-between"
+    >
+      <div className="container">
+        <NavBrand text="Shopping Cart"></NavBrand>
+        <NavList items={routes} />
+      </div>
     </HeaderNav>
   );
 };

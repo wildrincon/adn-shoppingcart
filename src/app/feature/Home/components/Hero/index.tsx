@@ -11,7 +11,7 @@ export const Hero: React.FC = () => (
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
             veritatis fugit pariatur voluptatem vero incidunt aspernatur.
           </p>
-          <Link to="/productos" className="hero__item--btn">
+          <Link to="/tienda" className="hero__item--btn">
             Ingresa a la tienda
           </Link>
         </div>

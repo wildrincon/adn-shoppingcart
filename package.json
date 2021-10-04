@@ -7,6 +7,7 @@
     "axios": "^0.19.2",
     "cross-env": "^7.0.2",
     "formik": "^2.1.4",
+    "json-server": "^0.16.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -22,6 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "json-server --watch ./src/app/core/api/db.json --port 3001",
     "test": "react-scripts test --watchAll=false",
     "test:watch": "react-scripts test --watchAll",
     "test:coverage": "react-scripts test --watchAll=false --coverage --reporters=default --reporters=jest-junit",
@@ -30,6 +32,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "http://localhost:3001/",
   "browserslist": {
     "production": [
       ">0.2%",
