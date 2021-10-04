@@ -11,9 +11,11 @@ export const Hero: React.FC = () => (
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
             veritatis fugit pariatur voluptatem vero incidunt aspernatur.
           </p>
-          <a href="/tienda" className="hero__item--btn">
-            Ingresa a la tienda
-          </a>
+          <button className="hero__item--btn">
+            <a href="/tienda">
+              Ingresa a la tienda
+            </a>
+          </button>
         </div>
       </div>
     </div>

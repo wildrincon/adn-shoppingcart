@@ -1,8 +1,11 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
-import { render } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import { ProductsList } from './';
 
-test('renders component usuarios', () => {
-  const component = render(<ProductsList />);
+describe("<ProductsList /> Component show list products", () => {
+  it("Renders <ProductsList /> component correctly", () => {
+    const { getByText } = render(<ProductsList />);
+    expect(getByText(/Tienda/i)).toBeInTheDocument();
+  })
 });
