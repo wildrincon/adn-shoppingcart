@@ -1,11 +1,12 @@
+import { ProductoRepositorio } from 'app/core/api/productos.repositorio';
+import { Producto } from 'app/feature/Producto/models/Producto';
+
 import {
   AGREGAR_PRODUCTO,
   ELIMINAR_PRODUCTO,
   LISTAR_PRODUCTOS,
   TiposAccionesProducto,
 } from './ProductosTiposAcciones';
-import { Producto } from 'app/feature/Producto/models/Producto';
-import { ProductoRepositorio } from 'app/core/api/productos.repositorio';
 
 export function listarProductos(
   productos: Array<Producto>,

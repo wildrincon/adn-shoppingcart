@@ -1,7 +1,8 @@
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
-import { BtnEliminarProducto } from '../EliminarProducto';
+
 import { Producto } from '../../models/Producto';
+import { BtnEliminarProducto } from '../EliminarProducto';
 import { Table } from './styles';
 
 export interface ListaProductosProps {

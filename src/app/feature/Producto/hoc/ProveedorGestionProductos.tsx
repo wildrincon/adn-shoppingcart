@@ -4,8 +4,9 @@ import {
   listarProductosAsync,
 } from 'app/core/redux/acciones/productos/ProductosAcciones';
 import { EstadoGeneral } from 'app/core/redux/modelo/EstadoGeneral';
-import { GestionProductos } from '../containers/GestionProductos';
 import { connect } from 'react-redux';
+
+import { GestionProductos } from '../containers/GestionProductos';
 
 const mapStateToProps = (state: EstadoGeneral) => {
   return state.productos;

@@ -1,3 +1,5 @@
+import { Producto } from 'app/feature/Producto/models/Producto';
+
 import {
   AGREGAR_PRODUCTO,
   ELIMINAR_PRODUCTO,
@@ -5,7 +7,6 @@ import {
   TiposAccionesProducto,
 } from '../../acciones/productos/ProductosTiposAcciones';
 import { EstadoProducto } from '../../modelo/EstadoProducto';
-import { Producto } from 'app/feature/Producto/models/Producto';
 
 const initialState: EstadoProducto = {
   productos: Array<Producto>(),

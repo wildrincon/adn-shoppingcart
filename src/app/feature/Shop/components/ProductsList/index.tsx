@@ -1,10 +1,10 @@
 import React, { Fragment, useContext, useEffect } from 'react';
 
 import ProductContext from '../../../../context/product/productContext';
-import ProductItem from '../ProductItem';
 import Spinner from '../../../../shared/components/Spinner';
+import ProductItem from '../ProductItem';
 
-const ShopPage: React.FC = () => {
+export const ProductsList: React.FC = () => {
   const { getProductsShop, productsShop, loadingShop } = useContext(
     ProductContext,
   );
@@ -18,7 +18,7 @@ const ShopPage: React.FC = () => {
   return (
     <Fragment>
       <div className="banner">
-        <h2 className="banner__heading">SHOP</h2>
+        <h2 className="banner__heading">TIENDA</h2>
       </div>
 
       <div className="shop">
@@ -36,4 +36,4 @@ const ShopPage: React.FC = () => {
   );
 };
 
-export default ShopPage;
+export default ProductsList;

@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { HeaderNav } from './styles';
+
 import { NavBrand } from './NavBrand';
 import { NavList } from './NavList';
+import { HeaderNav } from './styles';
 
 export const NavigationHeader: React.FC = () => {
   const routes = [

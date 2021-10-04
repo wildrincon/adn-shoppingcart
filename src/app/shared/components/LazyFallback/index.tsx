@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Div } from './styles';
+
 import Spinner from '../Spinner';
+import { Div } from './styles';
 
 export const LazyFallback = () => (
   <Div>

@@ -1,0 +1,24 @@
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $blue;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+
+  &__circle {
+    width: 100px;
+    border: 2px solid $blue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border-right-color: transparent;
+    animation: spin 2s infinite linear;
+  }
+  &__text {
+    font-weight: 550;
+    line-height: 3;
+  }
+}

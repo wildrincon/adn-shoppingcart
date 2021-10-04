@@ -1,7 +1,8 @@
-import * as React from 'react';
 import { Layout } from 'app/shared/components/Layout';
-import { ProveedorGestionProductos } from '../hoc/ProveedorGestionProductos';
+import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
+
+import { ProveedorGestionProductos } from '../hoc/ProveedorGestionProductos';
 
 const MainPage: React.FC<RouteComponentProps> = () => {
   return (

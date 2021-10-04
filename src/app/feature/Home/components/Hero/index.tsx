@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export const Hero: React.FC = () => (
   <div className="hero">
@@ -11,9 +11,9 @@ export const Hero: React.FC = () => (
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur,
             veritatis fugit pariatur voluptatem vero incidunt aspernatur.
           </p>
-          <Link to="/tienda" className="hero__item--btn">
+          <a href="/tienda" className="hero__item--btn">
             Ingresa a la tienda
-          </Link>
+          </a>
         </div>
       </div>
     </div>

@@ -1,8 +1,9 @@
-import * as React from 'react';
 import { RenderResult, fireEvent, render, wait } from '@testing-library/react';
-import { SinonStub, stub } from 'sinon';
-import { FormCrearProducto } from './';
 import { setTextEvent } from 'app/shared/utils/test';
+import * as React from 'react';
+import { SinonStub, stub } from 'sinon';
+
+import { FormCrearProducto } from './';
 
 describe('FormCrearProducto test', () => {
   let componentWrapper: RenderResult;

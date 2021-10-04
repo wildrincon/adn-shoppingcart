@@ -1,6 +1,7 @@
+import { Button } from 'app/shared/components/Button';
 import * as PropTypes from 'prop-types';
 import * as React from 'react';
-import { Button } from 'app/shared/components/Button';
+
 import { Producto } from '../../models/Producto';
 
 interface BtnEliminarProductoProps {

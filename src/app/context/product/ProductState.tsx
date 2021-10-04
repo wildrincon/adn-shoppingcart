@@ -1,9 +1,9 @@
-import React, { useReducer } from 'react';
 import axios from 'axios';
+import React, { useReducer } from 'react';
 
-import productReducer from './productReducer';
-import ProductContext, { initialState } from './productContext';
 import { productTypes } from '../types';
+import ProductContext, { initialState } from './productContext';
+import productReducer from './productReducer';
 
 const ProductState: React.FC = ({ children }) => {
   const [state, dispatch] = useReducer(productReducer, initialState);
@@ -12,7 +12,7 @@ const ProductState: React.FC = ({ children }) => {
     try {
       dispatch({ type: productTypes.LOADING_PRODUCT });
 
-      const res = await axios.get(`http://localhost:3001/products${slug}`);
+      const res = await axios.get(`/products${slug}`);
 
       dispatch({ type: productTypes.GET_PRODUCT, payload: res.data });
     } catch (err) {
@@ -23,7 +23,7 @@ const ProductState: React.FC = ({ children }) => {
   const getProductsShop = async () => {
     try {
       const res = await axios.get('http://localhost:3001/products');
-      console.log("data", res.data);
+      console.log('data', res.data);
       dispatch({
         type: productTypes.GET_SHOP_PRODUCTS,
         payload: res.data,

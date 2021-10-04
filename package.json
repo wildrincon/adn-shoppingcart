@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "server": "json-server --watch ./src/app/core/api/db.json --port 3001",
+    "server": "json-server --watch ./src/app/core/api/db.json --port 3001 --no-cors",
     "test": "react-scripts test --watchAll=false",
     "test:watch": "react-scripts test --watchAll",
     "test:coverage": "react-scripts test --watchAll=false --coverage --reporters=default --reporters=jest-junit",

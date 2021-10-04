@@ -1,6 +1,7 @@
+import { agregarNuevoProducto } from 'app/core/redux/acciones/productos/ProductosAcciones';
 import { EstadoProducto } from 'app/core/redux/modelo/EstadoProducto';
 import { Producto } from 'app/feature/Producto/models/Producto';
-import { agregarNuevoProducto } from 'app/core/redux/acciones/productos/ProductosAcciones';
+
 import reductorProductos from './productosReductor';
 
 describe('Reductor productos', () => {

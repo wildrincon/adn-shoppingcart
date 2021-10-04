@@ -1,5 +1,4 @@
-import { IState, IAction } from '../../../interfaces/product-interfaces';
-
+import { IAction, IState } from '../../../interfaces/product-interfaces';
 import { productTypes } from '../types';
 
 const productReducer = (state: IState, action: IAction): IState => {

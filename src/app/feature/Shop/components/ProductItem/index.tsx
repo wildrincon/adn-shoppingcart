@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// import CartContext from '../../context/cart/cartContext';
 import { IProduct } from '../../../../../interfaces/product-interfaces';
+
+// import CartContext from '../../context/cart/cartContext';
 // import ProductCTA from './ProductCTA';
 
-const ProductItem: React.FC<{ product: IProduct }> = ({ product }) => {
+export const ProductItem: React.FC<{ product: IProduct }> = ({ product }) => {
   return (
     <div className="product">
       <figure>
