@@ -1,5 +1,3 @@
-// Styles
-// eslint-disable-next-line
 import '../assets/scss/styles.scss';
 
 import { AppRouter } from 'app/AppRouter';

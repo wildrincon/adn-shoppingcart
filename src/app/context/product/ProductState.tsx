@@ -15,22 +15,17 @@ const ProductState: React.FC = ({ children }) => {
       const res = await axios.get(`/products${slug}`);
 
       dispatch({ type: productTypes.GET_PRODUCT, payload: res.data });
-    } catch (err) {
-      console.log(err);
-    }
+    } catch (err) {}
   };
 
   const getProductsShop = async () => {
     try {
       const res = await axios.get('http://localhost:3001/products');
-      console.log('data', res.data);
       dispatch({
         type: productTypes.GET_SHOP_PRODUCTS,
         payload: res.data,
       });
-    } catch (err) {
-      console.log(err);
-    }
+    } catch (err) {}
   };
 
   return (
