@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
-import { render, screen, within } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { ProductsList } from './';
 
 describe("<ProductsList /> Component show list products", () => {
